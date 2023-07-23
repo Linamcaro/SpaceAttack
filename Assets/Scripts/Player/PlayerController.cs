@@ -30,14 +30,24 @@ public class PlayerController : MonoBehaviour
         playerRb = GetComponent<Rigidbody>();
     }
 
-    void FixUpdate()
+    void FixedUpdate()
     {
        PlayerMovement();
     }
 
     private void PlayerMovement()
     {
-        playerRb.AddRelativeTorque
+        //Roll the spaceShip
+        playerRb.AddRelativeTorque(Vector3.fobrward * InputManager.Instance.Roll * rollTorque * Time.deltaTime);
+
+        //UpDown movement Pitch the spaceship
+        playerRb.AddRelativeTorque(Vector3.right * Mathf.Clamp(-InputManager.Instance.PitchYaw.y, -1, 1f) * pitchTorque * Time.deltaTime);
+
+        //Side movement - Yaw the spaceship
+        playerRb.AddRelativeTorque(Vector3.up * Mathf.Clamp(InputManager.Instance.PitchYaw.x, -1, 1f) * yawTorque * Time.deltaTime);
+
+
+
     }
 
 

@@ -276,50 +276,6 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &680610410
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 680610412}
-  - component: {fileID: 680610411}
-  m_Layer: 0
-  m_Name: InputManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &680610411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 680610410}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eea88abb4710fcd45a7314350c45ab88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &680610412
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 680610410}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.709495, y: -4.7381334, z: 6.430108}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &934236645
 GameObject:
   m_ObjectHideFlags: 0
@@ -460,6 +416,50 @@ TrailRenderer:
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
   m_Emitting: 1
+--- !u!1 &966529675
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 966529677}
+  - component: {fileID: 966529676}
+  m_Layer: 0
+  m_Name: InputManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &966529676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966529675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eea88abb4710fcd45a7314350c45ab88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &966529677
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966529675}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.941472, y: -5.7671843, z: -1.4799678}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1412203632
 GameObject:
   m_ObjectHideFlags: 0
@@ -1067,7 +1067,7 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 680610411}
+      - m_Target: {fileID: 966529676}
         m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
         m_MethodName: OnThrust
         m_Mode: 0
@@ -1083,7 +1083,7 @@ MonoBehaviour:
     m_ActionName: SpaceShipMovement/Thrust[/Keyboard/w,/Keyboard/s]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 680610411}
+      - m_Target: {fileID: 966529676}
         m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
         m_MethodName: OnStrafe
         m_Mode: 0
@@ -1099,7 +1099,7 @@ MonoBehaviour:
     m_ActionName: SpaceShipMovement/Strafe[/Keyboard/a,/Keyboard/d]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 680610411}
+      - m_Target: {fileID: 966529676}
         m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
         m_MethodName: OnUpDown
         m_Mode: 0
@@ -1115,7 +1115,7 @@ MonoBehaviour:
     m_ActionName: SpaceShipMovement/UpDown[/Keyboard/ctrl,/Keyboard/space]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 680610411}
+      - m_Target: {fileID: 966529676}
         m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
         m_MethodName: OnRoll
         m_Mode: 0
@@ -1131,7 +1131,7 @@ MonoBehaviour:
     m_ActionName: SpaceShipMovement/Roll[/Keyboard/q,/Keyboard/e]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 680610411}
+      - m_Target: {fileID: 966529676}
         m_TargetAssemblyTypeName: InputManager, Assembly-CSharp
         m_MethodName: OnPitchYaw
         m_Mode: 0
